@@ -1,0 +1,24 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@theme {
+    --font-secondary: "Montserrat", sans-serif; 
+  
+  --color-alto: #e8e8e8;
+  --color-light-grey: #EFEFEF;
+  --color-charcoal: #36454F;
+  --color-dark-teal: #1C2929;
+
+
+  --spacing-10: 0.625rem; 
+  --spacing-30: 1.875rem; 
+  --spacing-35: 2.188rem; 
+  --spacing-46: 2.875rem; 
+  --spacing-127: 7.99rem; 
+  --spacing-246: 15.375rem; 
+  --spacing-572: 35.761rem; 
+
+  --radius-25: 1.563rem; 
+  --radius-50: 3.125rem; 
+
+}
