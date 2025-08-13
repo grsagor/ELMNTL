@@ -11,7 +11,7 @@ export default function Layout() {
         <div className="navbar bg-transparent p-0 w-full">
           <Navbar />
           <div className="flex-none xl:hidden">
-            <label htmlFor="my-drawer-3" aria-label="open sidebar" className="btn btn-square btn-ghost">
+            {/* <label htmlFor="my-drawer-3" aria-label="open sidebar" className="btn btn-square btn-ghost">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -25,7 +25,7 @@ export default function Layout() {
                   d="M4 6h16M4 12h16M4 18h16"
                 ></path>
               </svg>
-            </label>
+            </label> */}
           </div>
         </div>
         {/* Page content here */}

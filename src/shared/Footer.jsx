@@ -9,7 +9,7 @@ const Footer = () => {
             <img width='360' src='https://liveelmntl.com/wp-content/uploads/2025/03/Group-1000001834.png'></img>
             </Link>
             </div>
-            <div className="footer sm:footer-horizontal text-base-content">
+            <div className="footer sm:footer-horizontal text-base-content justify-center gap-32">
             <nav>
                 <h6 className="text-white text-28 font-normal pb-15 border-b-2 border-b-white">Popular for Her</h6>
                 <Link className="text-15 text-white my-11">Hormone Balance</Link>
@@ -37,20 +37,20 @@ const Footer = () => {
                 <Link className="text-15 text-white my-11">FAQ</Link>
                 <Link className="text-15 text-white my-11">Contact Us</Link>  
             </nav>
-            <form>
+            <form className=''>
                 <h6 className="text-white text-28 font-normal pb-15 border-b-2 border-b-white">Legal</h6>
                 <Link className="text-15 text-white my-11">Terms + Conditions</Link>
                 <Link className="text-15 text-white my-11">Privacy Policy</Link>
                 <Link className="text-15 text-white my-11">Consumer Health Data Privacy</Link>
                 <Link className="text-15 text-white my-11">Refund & Cancellation</Link>
-                <fieldset className="w-80">
+                <fieldset className="w-full">
                     <label className='mb-6 block text-xl text-white font-semibold'>Subscribe Our Newsletter</label>
-                    <div className="join">
+                    <div className="join relative w-full">
                         <input
                             type="text"
                             placeholder="username@site.com"
-                            className="input input-bordered join-item" />
-                        <button className="btn btn-primary join-item">Subscribe</button>
+                            className="input input-bordered join-item rounded-full" />
+                        <button className="btn btn-primary join-item absolute right-2 top-2 bottom-2 p-0 h-auto rounded-full px-2 bg-charcoal">Subscribe</button>
                     </div>
                 </fieldset>
             </form>
