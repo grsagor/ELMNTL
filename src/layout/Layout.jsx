@@ -9,7 +9,7 @@ export default function Layout() {
         {/* Navbar */}
         <div className="navbar bg-transparent p-0 w-full">
           <Navbar />
-          <div className="flex-none lg:hidden">
+          <div className="flex-none xl:hidden">
             <label htmlFor="my-drawer-3" aria-label="open sidebar" className="btn btn-square btn-ghost">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -29,6 +29,10 @@ export default function Layout() {
         </div>
         {/* Page content here */}
         Content
+
+        <footer style={{ padding: "10px", background: "#f4f4f4", marginTop: "20px" }}>
+        <p>© {new Date().getFullYear()} My Website</p>
+      </footer>
         
       </div>
       <div className="drawer-side">
