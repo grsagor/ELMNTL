@@ -16,6 +16,7 @@
   --color-soft-red: #d9534f;
   --color-gunmetal : #33373D;
   --color-charcoal-blue : #3F444B;
+  --color-grayish-blue : #374550;
 
 
 
@@ -32,7 +33,9 @@
   --spacing-246: 15.375rem; 
   --spacing-572: 35.761rem; 
 
+  --radius-20: 1.25rem; 
   --radius-25: 1.563rem; 
   --radius-50: 3.125rem; 
 
 }
+

@@ -1,9 +1,10 @@
 import React from 'react';
+import RotatingText from '../components/RotatingText';
 
 const Home = () => {
     return (
         <div>
-            <h1 className='text-amber-400'>Welcome to the Home Page</h1>;
+            <RotatingText/>
         </div>
     );
 };

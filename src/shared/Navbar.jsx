@@ -28,15 +28,24 @@ const Navbar = () => {
                             </ul>
                         </details>
                     </li>
-                    <li>
-                        <details onMouseEnter={(e) => e.currentTarget.setAttribute("open", true)}
-                            onMouseLeave={(e) => e.currentTarget.removeAttribute("open")}>
+                    <li className=''>
+                        <details>
                             <summary className='py-0 px-10 hover:bg-transparent hover:text-charcoal after:content-none'>Our Products
                                 <svg className="w-15 h-15 e-font-icon-svg e-fas-caret-down" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"></path></svg>
                             </summary>
-                            <ul className="top-2 left-3 rounded-none w-177 text-gunmetal text-13">
+                            <ul className=" absolute top-2 left-3 rounded-none w-177 text-gunmetal text-13 bg-white shadow-lg">
                                 <li><Link className='flex jusify-center py-13 hover:bg-charcoal-blue hover:text-white'>All Products</Link></li>
-                                <li><Link className='flex jusify-center py-13 hover:bg-charcoal-blue hover:text-white'>Blood panels</Link></li>
+                                <li className="relative group">
+                                    <span className="flex py-13 px-3 hover:bg-charcoal-blue hover:text-white cursor-pointer blood-trigger">
+                                        Blood panels
+                                        <svg className="w-15 h-15 e-font-icon-svg e-fas-caret-down" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"></path></svg>
+                                    </span>
+                                    <ul className="absolute top-0 left-full hidden group-hover:block hover:block bg-white shadow-lg w-177 text-13">
+                                        <li><Link className="flex justify-center py-13 hover:bg-charcoal-blue hover:text-white">All Products</Link></li>
+                                        <li><Link className="flex justify-center py-13 hover:bg-charcoal-blue hover:text-white">Blood panels</Link></li>
+                                        <li><Link className="flex justify-center py-13 hover:bg-charcoal-blue hover:text-white">Advanced Testing</Link></li>
+                                    </ul>
+                                </li>
                                 <li><Link className='flex jusify-center py-13 hover:bg-charcoal-blue hover:text-white'>Advanced Testing</Link></li>
                                 <li><Link className='flex jusify-center py-13 hover:bg-charcoal-blue hover:text-white'>BHRT</Link></li>
                                 <li><Link className='flex jusify-center py-13 hover:bg-charcoal-blue hover:text-white'>Pepties</Link></li>
@@ -64,7 +73,7 @@ const Navbar = () => {
             </div>
             <div className="navbar-end w-auto flex justify-center items-center gap-5">
                 <div className='hidden md:block'>
-                    <Link className="btn px-6 py-3 rounded-50 bg-yellow-green text-charcoal font-base text-15 hover:bg-charcoal hover:text-white">Consultation</Link>
+                    <Link className="btn px-6 py-3 rounded-50 bg-yellow-green text-charcoal font-base text-15 hover:bg-charcoal hover:text-white transition-all duration-300">Consultation</Link>
                 </div>
                 <div className="drawer drawer-end">
                     <input id="my-drawer" type="checkbox" className="drawer-toggle" />
