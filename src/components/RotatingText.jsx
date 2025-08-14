@@ -1,37 +1,46 @@
 import React, { useState, useEffect } from "react";
 
 export default function RotatingText() {
-  const messages = [
-    "Hormone Balance",
-    "Strength + Endurance",
-    "Focus + Reset",
-    "Gut Health",
-    "Weight Loss",
-    "Hair + Skin Care",
-  ];
+    const messages = [
+        "Hormone Balance",
+        "Strength + Endurance",
+        "Focus + Reset",
+        "Gut Health",
+        "Weight Loss",
+        "Hair + Skin Care",
+    ];
 
-  const [index, setIndex] = useState(0);
-  const [animate, setAnimate] = useState(true);
+    const [index, setIndex] = useState(0);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setAnimate(false); // start fade out & slide up
-      setTimeout(() => {
-        setIndex((prev) => (prev + 1) % messages.length);
-        setAnimate(true); // start fade in & slide from bottom
-      }, 700); // match duration
-    }, 3500); // change every 3.5s
-    return () => clearInterval(interval);
-  }, []);
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setIndex((prev) => (prev + 1) % messages.length);
+        }, 2000); // Change text every 2 seconds
+        return () => clearInterval(interval);
+    }, []);
 
-  return (
-    <div className="h-8 overflow-hidden relative w-full flex items-center justify-center">
-      <div
-        className={`absolute w-full text-center transition-all duration-700 ease-in-out
-          ${animate ? "translate-y-0 opacity-100" : "-translate-y-8 opacity-0"}`}
-      >
-        {messages[index]}
-      </div>
-    </div>
-  );
+    return (
+        <div className="w-full text-30 md:text-65 text-gunmetal-blue pt-12 pb-3 md:py-20">
+            {/* Rotating text wrapper */}
+            <div className="relative h-16 md:h-24 overflow-hidden font-bold">
+                {messages.map((msg, i) => (
+                    <div
+                        key={i}
+                        className={`absolute w-full transition-all duration-500 ${i === index
+                                ? "opacity-100 translate-y-0"
+                                : "opacity-0 translate-y-2"
+                            }`}
+                    >
+                        {msg}
+                    </div>
+                ))}
+            </div>
+
+            {/* Tagline below */}
+            <div>
+                optimized for <span className="font-bold italic">you</span>
+            </div>
+        </div>
+
+    );
 }
