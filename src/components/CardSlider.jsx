@@ -9,189 +9,63 @@ import 'swiper/css/navigation';
 
 
 // import required modules
-import { Pagination, Navigation, Autoplay  } from 'swiper/modules';
+import { Pagination, Navigation, Autoplay } from 'swiper/modules';
+import CardSliderIcons from '../assets/icons/CardSliderIcons';
 
 const CardSlider = () => {
     const cards = [
         {
-            icon: (
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="w-10 h-10 text-green-600"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                >
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M3 7l9-4 9 4-9 4-9-4z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M3 17l9 4 9-4" />
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M3 12l9 4 9-4" />
-                </svg>
+            icon: (<CardSliderIcons.HBIcon />
             ),
-            bgVar: "--bg-card1",
-            title: "Web Development",
-            description: "Build responsive, modern, and fast websites.",
-            button: "Learn More"
+            bgVar: "--bg-card-HB",
+            title: "Hormone Balance",
+            description: "Unlock Your Best Life.",
+            button: "All Hormone Balance Products"
         },
         {
-            icon: (
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="w-10 h-10 text-green-600"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                >
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                </svg>
+            icon: (<CardSliderIcons.SEIcon />
             ),
-            title: "Startup Boost",
-            description: "Launch your product with confidence.",
-            button: "Get Started"
+            bgVar: "--bg-card-SE",
+            title: "Strength + Endurance",
+            description: "Unlock Your Peak Potential.",
+            button: "All Strength + Endurance Products"
         },
         {
-            icon: (
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="w-10 h-10 text-green-600"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                >
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M11 3v18M6 8l5-5 5 5" />
-                </svg>
+            icon: (<CardSliderIcons.FRIcon />
             ),
-            title: "Analytics",
-            description: "Track and analyze your business performance.",
-            button: "View Insights"
+            bgVar: "--bg-card-FR",
+            title: "Focus + Reset",
+            description: "Sharpen Your Mind, Elevate Your Calm.",
+            button: "All Focus + Reset Products"
         },
         {
-            icon: (
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="w-10 h-10 text-green-600"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                >
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M4 4h16v16H4z" />
-                </svg>
+            icon: (<CardSliderIcons.GHIcon />
             ),
-            title: "Custom Apps",
-            description: "Tailored applications for your business.",
-            button: "Contact Us"
+            bgVar: "--bg-card-GH",
+            title: "Gut Health",
+            description: "Real Health Starts in your Gut.",
+            button: "All Gut Health Products"
         },
         {
-            icon: (
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="w-10 h-10 text-green-600"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                >
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v16m8-8H4" />
-                </svg>
+            icon: (<CardSliderIcons.WLIcon />
             ),
-            title: "Growth Strategy",
-            description: "Plan for long-term success.",
-            button: "Discover More"
+            bgVar: "--bg-card-WL",
+            title: "Weight Loss",
+            description: "Achieve Lasting Results, Feel Incredible.",
+            button: "All Weight Loss Products"
         },
         {
-            icon: (
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="w-10 h-10 text-green-600"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                >
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M3 7l9-4 9 4-9 4-9-4z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M3 17l9 4 9-4" />
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M3 12l9 4 9-4" />
-                </svg>
+            icon: (<CardSliderIcons.HSIcon />
             ),
-            title: "Web Development",
-            description: "Build responsive, modern, and fast websites.",
-            button: "Learn More"
+            bgVar: "--bg-card-HS",
+            title: "Hair + Skincare",
+            description: "Radiate Beauty from Within.",
+            button: "All Hair + Skincare Products"
         },
-        {
-            icon: (
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="w-10 h-10 text-green-600"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                >
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                </svg>
-            ),
-            title: "Startup Boost",
-            description: "Launch your product with confidence.",
-            button: "Get Started"
-        },
-        {
-            icon: (
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="w-10 h-10 text-green-600"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                >
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M11 3v18M6 8l5-5 5 5" />
-                </svg>
-            ),
-            title: "Analytics",
-            description: "Track and analyze your business performance.",
-            button: "View Insights"
-        },
-        {
-            icon: (
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="w-10 h-10 text-green-600"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                >
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M4 4h16v16H4z" />
-                </svg>
-            ),
-            title: "Custom Apps",
-            description: "Tailored applications for your business.",
-            button: "Contact Us"
-        },
-        {
-            icon: (
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="w-10 h-10 text-green-600"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                >
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v16m8-8H4" />
-                </svg>
-            ),
-            title: "Growth Strategy",
-            description: "Plan for long-term success.",
-            button: "Discover More"
-        }
     ];
-    
+
     return (
-        <div >
+        <div className='py-20'>
             <Swiper
                 slidesPerView={1}
                 spaceBetween={20}
@@ -207,19 +81,22 @@ const CardSlider = () => {
                 //     disableOnInteraction: false
                 // }}
                 pagination={{ clickable: true }}
-                modules={[Pagination]}
+                navigation={true}
+                modules={[Pagination, Navigation]}
                 className="mySwiper"
             >
                 {cards.map((card, index) => (
                     <SwiperSlide key={index}>
-                        <div   style={{ backgroundImage: `var(${card.bgVar})` }}
- className=" bg-cover bg-center flex flex-col items-center text-center p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-                            {card.icon}
-                            <h3 className="mt-4 text-lg font-semibold">{card.title}</h3>
-                            <p className="mt-2 text-gray-600 text-sm">{card.description}</p>
-                            <button className="mt-4 px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition-colors">
-                                {card.button}
-                            </button>
+                        <div style={{ backgroundImage: `var(${card.bgVar})` }}
+                            className="group h-full bg-cover bg-center flex flex-col rounded-20 px-6 py-5 hover:cursor-pointer hover:opacity-98 transition-opacity duration-300">
+                            <h3 className="font-light text-28 text-white">{card.title}</h3>
+                            <div className='w-120 h-120 mx-auto text-soft-grey my-24 transition-all duration-300 group-hover:scale-130 flex justify-center'>{card.icon}</div>
+                            <p className=" text-white text-17 font-medium">{card.description}</p>
+                            <div className='mt-4'>
+                                <button className=" bg-yellow-green px-custom-20 py-10  text-charcoal font-medium text-sm rounded-50 hover:bg-charcoal hover:text-white transition-all duration-300 cursor-pointer">
+                                    {card.button}
+                                </button>
+                            </div>
                         </div>
                     </SwiperSlide>
                 ))}

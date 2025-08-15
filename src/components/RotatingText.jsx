@@ -20,7 +20,7 @@ export default function RotatingText() {
     }, []);
 
     return (
-        <div className="w-full text-30 md:text-65 text-gunmetal-blue pt-12 pb-3 md:py-20">
+        <div className="w-full text-3xl md:text-65 text-gunmetal-blue pt-12 pb-3 md:py-20">
             {/* Rotating text wrapper */}
             <div className="relative h-16 md:h-24 overflow-hidden font-bold">
                 {messages.map((msg, i) => (

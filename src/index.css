@@ -6,11 +6,13 @@
 
   --text-13: 0.813rem; 
   --text-15: 0.938rem; 
+  --text-17: 1.063rem; 
+  --text-25: 1.563rem; 
   --text-28: 1.75rem; 
-  --text-30: 1.875rem; 
   --text-65: 4.063rem; 
   
   --color-alto: #e8e8e8;
+  --color-soft-grey: #e9e8e8;
   --color-light-grey: #EFEFEF;
   --color-charcoal: #36454F;
   --color-dark-teal: #1C2929;
@@ -29,9 +31,11 @@
   --spacing-11: 0.719rem; 
   --spacing-13: 0.813rem; 
   --spacing-15: 0.938rem; 
+  --spacing-custom-20: 1.25rem; 
   --spacing-30: 1.875rem; 
   --spacing-35: 2.188rem; 
   --spacing-46: 2.875rem; 
+  --spacing-120: 7.5rem; 
   --spacing-127: 7.99rem; 
   --spacing-177: 11.108rem; 
   --spacing-246: 15.375rem; 
@@ -41,6 +45,36 @@
   --radius-25: 1.563rem; 
   --radius-50: 3.125rem; 
 
-  --bg-card1: url('/assets/images/focus.bg_.jpg');
+  --bg-card-FR: url('/assets/images/focus.bg_.jpg');
+  --bg-card-GH: url('/assets/images/gut.health.bg_.jpg');
+  --bg-card-HS: url('/assets/images/hair.bg_.jpg');
+  --bg-card-HB: url('/assets/images/hormone.bg_.jpg');
+  --bg-card-WL: url('/assets/images/weight.bg_.jpg');
+  --bg-card-SE: url('/assets/images/strength.bg_.jpg');
+}
+.swiper {
+  overflow: visible;
 }
 
+.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+  bottom: -30px;
+}
+.swiper-pagination-bullet-active{
+  background-color: black;
+}
+.swiper-pagination-bullet:hover {
+  opacity: 1;
+}
+.swiper-button-prev, .swiper-button-next{
+  width: 45px;
+  height: 45px;
+  background-color: white;
+  border-radius: 50px;
+  padding: 10px;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 25px; 
+  color: #36454F; 
+  font-weight: 600;
+}
