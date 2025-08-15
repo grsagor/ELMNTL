@@ -2,15 +2,17 @@
 @plugin "daisyui";
 
 @theme {
-  --font-secondary: "Montserrat", sans-serif; 
+  --font-secondary: "Montserrat", sans-serif;
 
-  --text-13: 0.813rem; 
-  --text-15: 0.938rem; 
-  --text-17: 1.063rem; 
-  --text-25: 1.563rem; 
-  --text-28: 1.75rem; 
-  --text-65: 4.063rem; 
-  
+  --text-13: 0.813rem;
+  --text-15: 0.938rem;
+  --text-17: 1.063rem;
+  --text-25: 1.563rem;
+  --text-28: 1.75rem;
+  --text-40: 2.5rem;
+  --text-65: 4.063rem;
+  --text-85: 5.313rem;
+
   --color-alto: #e8e8e8;
   --color-soft-grey: #e9e8e8;
   --color-light-grey: #EFEFEF;
@@ -18,32 +20,32 @@
   --color-dark-teal: #1C2929;
   --color-yellow-green: #D9E021;
   --color-soft-red: #d9534f;
-  --color-gunmetal : #33373D;
-  --color-charcoal-blue : #3F444B;
-  --color-grayish-blue : #374550;
+  --color-gunmetal: #33373D;
+  --color-charcoal-blue: #3F444B;
+  --color-grayish-blue: #374550;
   --color-gunmetal-blue: #394553;
 
 
 
 
-  --spacing-1: 0.063rem; 
-  --spacing-10: 0.625rem; 
-  --spacing-11: 0.719rem; 
-  --spacing-13: 0.813rem; 
-  --spacing-15: 0.938rem; 
-  --spacing-custom-20: 1.25rem; 
-  --spacing-30: 1.875rem; 
-  --spacing-35: 2.188rem; 
-  --spacing-46: 2.875rem; 
-  --spacing-120: 7.5rem; 
-  --spacing-127: 7.99rem; 
-  --spacing-177: 11.108rem; 
-  --spacing-246: 15.375rem; 
-  --spacing-572: 35.761rem; 
+  --spacing-1: 0.063rem;
+  --spacing-10: 0.625rem;
+  --spacing-11: 0.719rem;
+  --spacing-13: 0.813rem;
+  --spacing-15: 0.938rem;
+  --spacing-custom-20: 1.25rem;
+  --spacing-30: 1.875rem;
+  --spacing-35: 2.188rem;
+  --spacing-46: 2.875rem;
+  --spacing-120: 7.5rem;
+  --spacing-127: 7.99rem;
+  --spacing-177: 11.108rem;
+  --spacing-246: 15.375rem;
+  --spacing-572: 35.761rem;
 
-  --radius-20: 1.25rem; 
-  --radius-25: 1.563rem; 
-  --radius-50: 3.125rem; 
+  --radius-20: 1.25rem;
+  --radius-25: 1.563rem;
+  --radius-50: 3.125rem;
 
   --bg-card-FR: url('/assets/images/focus.bg_.jpg');
   --bg-card-GH: url('/assets/images/gut.health.bg_.jpg');
@@ -51,30 +53,34 @@
   --bg-card-HB: url('/assets/images/hormone.bg_.jpg');
   --bg-card-WL: url('/assets/images/weight.bg_.jpg');
   --bg-card-SE: url('/assets/images/strength.bg_.jpg');
+  --bg-CTA1: url('/assets/images/bg_CTA1.jpg');
 }
-.swiper {
-  overflow: visible;
+#services .swiper{
+  padding-bottom: 50px;
 }
-
-.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
-  bottom: -30px;
+#services .swiper-slide{
+  height: auto;
 }
-.swiper-pagination-bullet-active{
+#services .swiper-pagination-bullet-active {
   background-color: black;
 }
-.swiper-pagination-bullet:hover {
+
+#services .swiper-pagination-bullet:hover {
   opacity: 1;
 }
-.swiper-button-prev, .swiper-button-next{
+
+#services .swiper-button-prev,
+.swiper-button-next {
   width: 45px;
   height: 45px;
   background-color: white;
   border-radius: 50px;
   padding: 10px;
 }
-.swiper-button-prev::after,
+
+#services .swiper-button-prev::after,
 .swiper-button-next::after {
-  font-size: 25px; 
-  color: #36454F; 
+  font-size: 25px;
+  color: #36454F;
   font-weight: 600;
 }
