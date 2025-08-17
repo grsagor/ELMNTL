@@ -70,7 +70,7 @@
 }
 
 #services .swiper-button-prev,
-.swiper-button-next {
+#services .swiper-button-next {
   width: 45px;
   height: 45px;
   background-color: white;
@@ -79,7 +79,7 @@
 }
 
 #services .swiper-button-prev::after,
-.swiper-button-next::after {
+#services .swiper-button-next::after {
   font-size: 25px;
   color: #36454F;
   font-weight: 600;
