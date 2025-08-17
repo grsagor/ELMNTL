@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const CTA2 = () => {
     return (
-        <div className='py-[80px] px-[100px] mx-aut0 flex flex-col justify-center items-center'>
+        <div className='py-[80px] md:px-[100px] flex flex-col justify-center items-center'>
             <h2 className='text-[30px] md:text-[40px] lg:text-[60px] 2xl:text-[75px] text-charcoal'>Your Path to Wellness</h2>
             <div className='grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-8 lg:gap-20 mt-12 2xl:mt-20'>
                 <div className='relative rounded-[20px] '>
