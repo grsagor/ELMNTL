@@ -4,6 +4,7 @@ import CardSlider from '../components/CardSlider';
 import CTA1 from '../components/CTA1';
 import CTA2 from '../components/CTA2';
 import CTA3 from '../components/CTA3';
+import Features from '../components/Features';
 
 const Home = () => {
     return (
@@ -13,6 +14,7 @@ const Home = () => {
             <CTA1 />
             <CTA2 />
             <CTA3 />
+            <Features />
         </div>
     );
 };
