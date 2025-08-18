@@ -69,15 +69,15 @@ const CardSlider = () => {
             <Swiper
                 spaceBetween={20}
                 breakpoints={{
-                    640: { slidesPerView: 2 },
-                    768: { slidesPerView: 3 },
-                    1280: { slidesPerView: 3.5 },
-                    1536: { slidesPerView: 5 },
-                }}
+                    640: { slidesPerView: 2 }, 
+                    768: { slidesPerView: 3 },     
+                    1280: { slidesPerView: 3.5 },   
+                    1536: { slidesPerView: 5 }, 
+                  }}
                 loop={true}
-                speed={2000}
+                speed={2000} 
                 autoplay={{
-                    delay: 1500,
+                    delay: 1500, 
                     disableOnInteraction: false
                 }}
                 pagination={{ clickable: true }}
@@ -90,9 +90,9 @@ const CardSlider = () => {
                         <div style={{ backgroundImage: `var(${card.bgVar})` }}
                             className="group h-full bg-cover bg-center flex flex-col rounded-20 px-6 py-5 hover:cursor-pointer hover:opacity-98 transition-opacity duration-300">
                             <div className='flex-1'>
-                                <h3 className="font-light text-28 text-white">{card.title}</h3>
-                                <div className='w-120 h-120 mx-auto text-soft-grey my-24 transition-all duration-300 group-hover:scale-130 flex justify-center'>{card.icon}</div>
-                                <p className=" text-white text-17 font-medium">{card.description}</p>
+                            <h3 className="font-light text-28 text-white">{card.title}</h3>
+                            <div className='w-120 h-120 mx-auto text-soft-grey my-24 transition-all duration-300 group-hover:scale-130 flex justify-center'>{card.icon}</div>
+                            <p className=" text-white text-17 font-medium">{card.description}</p>
                             </div>
                             <div className='mt-4'>
                                 <button className=" bg-yellow-green px-custom-20 py-10  text-charcoal font-medium text-sm rounded-50 hover:bg-charcoal hover:text-white transition-all duration-300 cursor-pointer">
