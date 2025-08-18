@@ -78,9 +78,24 @@
   padding: 10px;
 }
 
-#services .swiper-button-prev::after,
-#services .swiper-button-next::after {
+#products .swiper-button-prev::after,
+#products .swiper-button-next::after {
   font-size: 25px;
-  color: #36454F;
+  color: white;
+  font-weight: 600;
+}
+#products .swiper-button-prev,
+#products .swiper-button-next {
+  width: 30px;
+  height: 30px;
+  background-color: #36454F;
+  border-radius: 50px;
+  padding: 16px;
+}
+
+#products .swiper-button-prev::after,
+#products .swiper-button-next::after {
+  font-size: 25px;
+  color: white;
   font-weight: 600;
 }

@@ -5,6 +5,7 @@ import CTA1 from '../components/CTA1';
 import CTA2 from '../components/CTA2';
 import CTA3 from '../components/CTA3';
 import Features from '../components/Features';
+import Products from '../components/Products';
 
 const Home = () => {
     return (
@@ -15,6 +16,7 @@ const Home = () => {
             <CTA2 />
             <CTA3 />
             <Features />
+            <Products />
         </div>
     );
 };
