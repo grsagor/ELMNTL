@@ -54,11 +54,11 @@ const Products = () => {
                 loop={true}
                 navigation={true}
                 modules={[Navigation]}
-                className="mySwiper"
+                className="mySwiper [&_.swiper-slide]:h-auto [&_.swiper-slide]:flex"
             >
                 {products.map((product, index) => (
                     <SwiperSlide key={index}>
-                        <div className="flex flex-col justify-center p-5 bg-white rounded-[10px] gap-5">
+                        <div className="flex flex-col justify-center p-5 bg-white rounded-[10px] gap-5 ">
                             <h3 className="text-[28px] font-light">{product.name}</h3>
                             <img
                                 src={product.image}
