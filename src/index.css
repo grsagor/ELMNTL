@@ -17,6 +17,8 @@
   --color-soft-grey: #e9e8e8;
   --color-light-grey: #EFEFEF;
   --color-charcoal: #36454F;
+  --color-charcoal-grey: #54595F;
+  --color-dark-blue: #2E3E48;
   --color-dark-teal: #1C2929;
   --color-yellow-green: #D9E021;
   --color-soft-red: #d9534f;
@@ -104,4 +106,9 @@
 
 #products .swiper-slide{
   height: auto;
+}
+
+#custom-bg-style{
+  background-color: transparent;
+  color: currentColor;
 }
